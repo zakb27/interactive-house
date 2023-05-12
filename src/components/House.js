@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import React, {useEffect, useState} from "react";
 import '../styles/house.css'
 import {getDevices} from '../Database/Connection'
+import Devices from './Devices'
 const House = () => {
 
     // useEffect(() => {
@@ -12,50 +13,13 @@ const House = () => {
 
 
     return (
-        <>
+        <div className={'container'}>
         <div className="banner">
         </div>
         <div className={'devices_container'}>
-
-            <div className="connected">
-                <h2>Name</h2>
-                <h3>Type</h3>
-                <h4>Value</h4>
-                <div className="status"></div>
-            </div>
-
-                        <div className="connected">
-                <h2>Name</h2>
-                <h3>Type</h3>
-                <h4>Value</h4>
-                <div className="status"></div>
-            </div>
-
-                        <div className="connected">
-                <h2>Name</h2>
-                <h3>Type</h3>
-                <h4>Value</h4>
-                <div className="status"></div>
-            </div>
-
-                        <div className="connected">
-                <h2>Name</h2>
-                <h3>Type</h3>
-                <h4>Value</h4>
-                <div className="status"></div>
-            </div>
-
-                        <div className="connected">
-                <h2>Name</h2>
-                <h3>Type</h3>
-                <h4>Value</h4>
-                <div className="status"></div>
-            </div>
-
-
-            <button>Add device</button>
+            <Devices />
         </div>
-        </>
+        </div>
     )
 
 }

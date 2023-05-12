@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/interactive-house.iml" filepath="$PROJECT_DIR$/.idea/interactive-house.iml" />
       <module fileurl="file://$PROJECT_DIR$/../lazer-site/.idea/lazer-site.iml" filepath="$PROJECT_DIR$/../lazer-site/.idea/lazer-site.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../smart-home/.idea/smart-home.iml" filepath="$PROJECT_DIR$/../smart-home/.idea/smart-home.iml" />
     </modules>
   </component>
 </project>
