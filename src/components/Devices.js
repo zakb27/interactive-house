@@ -6,12 +6,12 @@ import other from '../assets/other.svg'
 import speaker from '../assets/speaker.svg'
 import temp from '../assets/temp.svg'
 import washer from '../assets/washer.svg'
-
+import key from '../Database/key'
 const Devices = () =>{
     const [devices,changeDevices] = useState([{name:'test',type:'test',value:'test'}])
     useEffect(()=>{
         const getDevices = async()=>{
-            const response = await fetch('http://localhost:3005/getAllDevices');
+            const response = await fetch(key+'/getAllDevices');
             const data = await response.json();
             console.log(data.devices)
             changeDevices(data.devices);
@@ -19,7 +19,7 @@ const Devices = () =>{
 
             const interval = setInterval(async() => {
 
-                    const response = await fetch('http://localhost:3005/getAllDevices');
+                    const response = await fetch(key+'/getAllDevices');
                     const data = await response.json();
                     console.log(data.devices)
                     changeDevices(data.devices);
